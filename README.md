@@ -9,7 +9,7 @@ The ultimate goal of unmock is to provide a semantically and functionally adequa
 
 ## How does it work?
 
-The `unmock-spring` uses the Spring `ResponseCreator` pattern to intercept requests and run them through unmock.  For example, the following test intercepts a call to the Behance API and automatically returns mock data.
+The `unmock-spring` package uses the Spring `ResponseCreator` pattern to intercept requests and run them through unmock.  For example, the following test intercepts a call to the Behance API and automatically returns mock data.
 
 ```java
   @Test
