@@ -5,15 +5,12 @@ plugins {
 }
 
 group 'io.unmock'
-version '0.0.0-SNAPSHOT'
+version '0.0.1-SNAPSHOT'
 
 sourceCompatibility = 1.8
 
 repositories {
     mavenCentral()
-    maven {
-        url "https://oss.sonatype.org/content/repositories/snapshots/"
-    }
 }
 
 task javadocJar(type: Jar) {
@@ -88,7 +85,7 @@ configurations.all {
 
 dependencies {
     compile group: 'io.unmock', name: 'core', version: '0.0.0'
-    compile group: 'io.unmock', name: 'okhttp', version: '0.0.0-SNAPSHOT'
+    compile group: 'io.unmock', name: 'okhttp', version: '0.0.0'
     compile group: 'com.squareup.okhttp3', name: 'okhttp', version: '3.14.0'
     compile group: 'org.springframework', name: 'spring-web', version: '5.1.5.RELEASE'
     compile group: 'org.springframework', name: 'spring-test', version: '5.1.5.RELEASE'
